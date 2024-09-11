@@ -1,0 +1,23 @@
+server:
+  port: 8010
+
+spring:
+  application:
+    name: user-service
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+    feign:
+      discovery:
+        enabled: true
+      hystrix:
+        enabled: false
+
+logging:
+  level:
+    org.springframework: DEBUG
