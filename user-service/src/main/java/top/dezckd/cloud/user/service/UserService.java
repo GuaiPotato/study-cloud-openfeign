@@ -3,7 +3,7 @@ package top.dezckd.cloud.user.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import top.dezckd.cloud.user.client.OrderServiceClient;
-import top.dezckd.cloud.user.pojo.dto.OrderResponse;
+import top.dezckd.cloud.user.entity.dto.OrderResponse;
 
 /**
  * @Author DEZ

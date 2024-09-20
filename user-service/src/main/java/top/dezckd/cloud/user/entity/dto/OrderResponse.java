@@ -1,4 +1,4 @@
-package top.dezckd.cloud.user.pojo.dto;
+package top.dezckd.cloud.user.entity.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

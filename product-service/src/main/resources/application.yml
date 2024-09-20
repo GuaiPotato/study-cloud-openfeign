@@ -1,5 +1,5 @@
 server:
-  port: 8030
+  port: ${product-service.port}
 
 spring:
   application:
@@ -8,7 +8,7 @@ spring:
     active: dev
   cloud:
     nacos:
-      discovery:
-        server-addr: localhost:8848
-        username: nacos
-        password: nacos
+      config:
+        server-addr: ${nacos.server-address}
+        group: ${nacos.group}
+        file-extension: ${nacos.file-extension}

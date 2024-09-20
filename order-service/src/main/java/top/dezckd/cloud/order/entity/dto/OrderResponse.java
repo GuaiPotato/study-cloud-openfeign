@@ -1,4 +1,4 @@
-package top.dezckd.cloud.order.pojo.dto;
+package top.dezckd.cloud.order.entity.dto;
 
 import lombok.Data;
 

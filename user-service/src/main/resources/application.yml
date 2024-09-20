@@ -1,5 +1,5 @@
 server:
-  port: 8010
+  port: ${user-service.port}
 
 spring:
   application:
@@ -8,15 +8,18 @@ spring:
     active: dev
   cloud:
     nacos:
-      discovery:
-        server-addr: localhost:8848
-        username: nacos
-        password: nacos
+      config:
+        server-addr: ${nacos.server-address}
+        group: ${nacos.group}
+        file-extension: ${nacos.file-extension}
     feign:
       discovery:
         enabled: true
       hystrix:
         enabled: false
+
+jwt:
+  secret-key: 2ad5af5f-85cd-4423-b443-7a4ec30072f7
 
 logging:
   level:
