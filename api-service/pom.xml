@@ -12,6 +12,10 @@
 
     <properties>
         <common-service.version>1.0</common-service.version>
+        <maven-repository>D:/Maven/repository</maven-repository>
+        <nacos-aes-encryption-plugin-path>
+            ${maven-repository}/com/alibaba/nacos/nacos-aes-encryption-plugin/1.0.0-SNAPSHOT/nacos-aes-encryption-plugin-1.0.0-SNAPSHOT.jar
+        </nacos-aes-encryption-plugin-path>
     </properties>
 
     <dependencies>
@@ -82,5 +86,13 @@
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
 
+        <!-- nacos-aes-encryption-plugin -->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-aes-encryption-plugin</artifactId>
+            <version>${nacos-aes-encryption-plugin.version}</version>
+            <scope>system</scope>
+            <systemPath>${nacos-aes-encryption-plugin-path}</systemPath>
+        </dependency>
     </dependencies>
 </project>
